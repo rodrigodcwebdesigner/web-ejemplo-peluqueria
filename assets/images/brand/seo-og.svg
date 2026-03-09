@@ -1,0 +1,16 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+  <title id="t">AURA Studio</title>
+  <desc id="d">Peluqueria premium en Madrid</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f4e46"/>
+      <stop offset="55%" stop-color="#2d6c62"/>
+      <stop offset="100%" stop-color="#b98f58"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <circle cx="1020" cy="100" r="180" fill="#ffffff" fill-opacity="0.09"/>
+  <circle cx="130" cy="520" r="210" fill="#ffffff" fill-opacity="0.07"/>
+  <text x="95" y="290" fill="#ffffff" font-family="Georgia, serif" font-size="88" letter-spacing="2">AURA Studio</text>
+  <text x="95" y="355" fill="#f5efe6" font-family="Arial, sans-serif" font-size="34">Peluqueria premium en Madrid</text>
+</svg>
