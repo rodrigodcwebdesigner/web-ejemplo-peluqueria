@@ -28,11 +28,11 @@
   {"@context":"https://schema.org","@type":"HairSalon","name":"AURA STUDIO","telephone":"+34910011223","priceRange":"EUR","address":{"@type":"PostalAddress","streetAddress":"Calle de Fernando VI, 22","addressLocality":"Madrid","postalCode":"28004","addressCountry":"ES"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"20:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"15:00"}]}
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuánto dura una cita de color?","acceptedAnswer":{"@type":"Answer","text":"La media es entre 2 horas y 30 minutos y 3 horas, según el servicio y el diagnóstico previo."}},{"@type":"Question","name":"¿Cómo se gestionan las reservas?","acceptedAnswer":{"@type":"Answer","text":"Puedes solicitar cita por formulario, teléfono o WhatsApp y el equipo confirma disponibilidad."}},{"@type":"Question","name":"¿Trabajáis eventos de boda?","acceptedAnswer":{"@type":"Answer","text":"Sí, con prueba previa y planificación personalizada."}}]}
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuánto dura una cita de color?","acceptedAnswer":{"@type":"Answer","text":"La media es entre 2 horas y 30 minutos y 3 horas, según el servicio y el diagnóstico previo."}},{"@type":"Question","name":"¿Cómo se gestionan las reservas?","acceptedAnswer":{"@type":"Answer","text":"Puedes solicitar cita por formulario o teléfono y el equipo confirma disponibilidad."}},{"@type":"Question","name":"¿Trabajáis eventos de boda?","acceptedAnswer":{"@type":"Answer","text":"Sí, con prueba previa y planificación personalizada."}}]}
   </script>
 </head>
 <body>
-  <header class="header" id="inicio">
+  <header class="header">
     <div class="container header-inner">
       <a class="brand" href="#inicio" aria-label="AURA STUDIO inicio">
         <span class="brand-mark" aria-hidden="true"></span>
@@ -56,7 +56,7 @@
   </header>
 
   <main>
-    <section class="hero section">
+    <section class="hero section" id="inicio">
       <div class="container hero-grid">
         <div class="hero-copy" data-reveal>
           <span class="eyebrow">Peluquería premium y cercana</span>
@@ -113,7 +113,7 @@
       <div class="container">
         <div class="section-head" data-reveal>
           <div><span class="eyebrow">Precios</span><h2>Tarifas orientativas</h2></div>
-          <p>El presupuesto final puede variar según cantidad de cabello y objetivo tecnico.</p>
+          <p>El presupuesto final puede variar según cantidad de cabello y objetivo técnico.</p>
         </div>
         <div class="prices-grid">
           <article class="price-card" data-reveal><h3>Corte y peinado</h3><p>Corte para distintos largos y peinados diarios.</p><ul><li>Corte corto o medio: 24 EUR</li><li>Corte largo: 28 EUR</li><li>Lavado + peinado: 18 EUR</li><li>Peinado ondas: 25 EUR</li></ul></article>
@@ -130,8 +130,8 @@
           <p>Cada estilista trabaja su especialidad para mantener calidad constante.</p>
         </div>
         <div class="team-grid">
-          <article class="team-card" data-reveal><img src="https://images.pexels.com/photos/7755534/pexels-photo-7755534.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Profesional trabajando en secado y peinado" loading="lazy" width="900" height="1000" /><div class="team-body"><h3>Lucia Vega</h3><span>Directora</span><p>Corte y diseño de imagen.</p></div></article>
-          <article class="team-card" data-reveal><img src="https://images.pexels.com/photos/13130577/pexels-photo-13130577.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Colorista trabajando en un corte masculino" loading="lazy" width="900" height="1000" /><div class="team-body"><h3>Alvaro Leon</h3><span>Colorista</span><p>Rubios, cobrizos y correccion tonal.</p></div></article>
+          <article class="team-card" data-reveal><img src="https://images.pexels.com/photos/7755534/pexels-photo-7755534.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Profesional trabajando en secado y peinado" loading="lazy" width="900" height="1000" /><div class="team-body"><h3>Lucía Vega</h3><span>Directora</span><p>Corte y diseño de imagen.</p></div></article>
+          <article class="team-card" data-reveal><img src="https://images.pexels.com/photos/13130577/pexels-photo-13130577.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Colorista trabajando en un corte masculino" loading="lazy" width="900" height="1000" /><div class="team-body"><h3>Álvaro León</h3><span>Colorista</span><p>Rubios, cobrizos y corrección tonal.</p></div></article>
           <article class="team-card" data-reveal><img src="https://images.pexels.com/photos/4783348/pexels-photo-4783348.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Estilista trabajando en cliente en salón" loading="lazy" width="900" height="1000" /><div class="team-body"><h3>Sara Molina</h3><span>Stylist eventos</span><p>Bodas y celebraciones.</p></div></article>
         </div>
       </div>
@@ -146,7 +146,7 @@
           <button class="gallery-btn" type="button" data-caption="Peluquera trabajando en secado final" data-reveal><img src="https://images.pexels.com/photos/7755534/pexels-photo-7755534.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Secado final en salón" loading="lazy" /></button>
           <button class="gallery-btn" type="button" data-caption="Corte en proceso en salón" data-reveal><img src="https://images.pexels.com/photos/13130577/pexels-photo-13130577.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Corte en proceso" loading="lazy" /></button>
           <button class="gallery-btn" type="button" data-caption="Trabajo de peinado en cliente" data-reveal><img src="https://images.pexels.com/photos/4783348/pexels-photo-4783348.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Peinado en cliente" loading="lazy" /></button>
-          <button class="gallery-btn" type="button" data-caption="Corte clásico en barberia" data-reveal><img src="https://images.pexels.com/photos/3105409/pexels-photo-3105409.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Corte clásico en barberia" loading="lazy" /></button>
+          <button class="gallery-btn" type="button" data-caption="Corte clásico en barbería" data-reveal><img src="https://images.pexels.com/photos/3105409/pexels-photo-3105409.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Corte clásico en barbería" loading="lazy" /></button>
           <button class="gallery-btn" type="button" data-caption="Corte profesional con máquina" data-reveal><img src="https://images.pexels.com/photos/7781844/pexels-photo-7781844.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Corte con máquina" loading="lazy" /></button>
           <button class="gallery-btn" type="button" data-caption="Ajuste de corte y acabado" data-reveal><img src="https://images.pexels.com/photos/5970246/pexels-photo-5970246.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Ajuste final de corte" loading="lazy" /></button>
         </div>
@@ -167,8 +167,8 @@
             </div>
           </div>
           <div class="review-controls" data-reveal>
-            <button class="ctrl" id="prevReview" type="button" aria-label="Opinion anterior">&#8592;</button>
-            <button class="ctrl" id="nextReview" type="button" aria-label="Siguiente opinion">&#8594;</button>
+            <button class="ctrl" id="prevReview" type="button" aria-label="Opinión anterior">&#8592;</button>
+            <button class="ctrl" id="nextReview" type="button" aria-label="Siguiente opinión">&#8594;</button>
           </div>
         </div>
       </div>
@@ -182,7 +182,7 @@
         <div class="faq-grid">
           <details data-reveal><summary>¿Cuánto dura una cita de color?</summary><p>Entre 2h 30m y 3h según técnica y estado del cabello.</p></details>
           <details data-reveal><summary>¿Necesito diagnóstico previo?</summary><p>En servicios técnicos sí, para ajustar tono, tiempos y protección.</p></details>
-          <details data-reveal><summary>¿Puedo reservar por WhatsApp?</summary><p>Sí, puedes pedir cita por WhatsApp, teléfono o formulario y te confirmamos disponibilidad.</p></details>
+          <details data-reveal><summary>¿Cómo puedo reservar?</summary><p>Puedes solicitar cita por formulario o por teléfono, y te confirmamos disponibilidad.</p></details>
           <details data-reveal><summary>¿Hacéis packs para bodas y eventos?</summary><p>Sí, con prueba previa y planificación del horario del evento.</p></details>
         </div>
       </div>
@@ -198,7 +198,7 @@
             <p><strong>Dirección:</strong> Calle de Fernando VI, 22, 28004 Madrid</p>
             <p><strong>Teléfono:</strong> <a href="tel:+34910011223">+34 910 011 223</a></p>
             <p><strong>Email:</strong> <a href="mailto:hola@aurastudio.es">hola@aurastudio.es</a></p>
-            <p><strong>Gestión de citas:</strong> Formulario, teléfono y WhatsApp.</p>
+            <p><strong>Gestión de citas:</strong> Formulario y teléfono.</p>
           </div>
           <div class="map"><iframe title="Mapa de AURA STUDIO" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Calle+de+Fernando+VI,+22,+Madrid&output=embed"></iframe></div>
         </article>
@@ -254,7 +254,7 @@
   </footer>
 
   <div class="floating" aria-label="Accesos rapidos">
-    <a class="fab-whatsapp" href="#" data-demo-contact="1" aria-label="WhatsApp de demostración">
+    <a class="fab-whatsapp" href="#contacto" aria-label="Ir a contacto">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.11 4.93A9.83 9.83 0 0 0 12.08 2a9.9 9.9 0 0 0-8.62 14.8L2 22l5.36-1.4a9.84 9.84 0 0 0 4.72 1.2h.01A9.91 9.91 0 0 0 22 11.9a9.83 9.83 0 0 0-2.89-6.97ZM12.09 20.1h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.18.83.85-3.1-.2-.32a8.21 8.21 0 1 1 15.23-4.27 8.22 8.22 0 0 1-8.2 8.2Zm4.5-6.14c-.25-.13-1.49-.73-1.72-.82-.23-.08-.4-.12-.56.13-.17.25-.65.82-.8 1-.15.17-.3.2-.55.07-.25-.13-1.07-.39-2.03-1.25-.75-.67-1.26-1.5-1.4-1.75-.15-.25-.02-.38.11-.5.11-.11.25-.3.37-.45.12-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.56-1.35-.77-1.84-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.45.06-.68.32-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.02 2.6.13.17 1.76 2.69 4.26 3.77.6.26 1.07.42 1.44.54.61.2 1.17.17 1.61.1.49-.07 1.49-.61 1.7-1.2.21-.59.21-1.1.15-1.2-.06-.1-.23-.17-.48-.3Z"/></svg>
     </a>
   </div>

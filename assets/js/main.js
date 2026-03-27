@@ -18,7 +18,6 @@
   var lightboxCaption = document.getElementById("lightboxCaption");
   var closeLightbox = document.getElementById("closeLightbox");
   var galleryBtns = document.querySelectorAll(".gallery-btn");
-  var demoContactLinks = document.querySelectorAll('[data-demo-contact="1"]');
   var reviewIndex = 0;
   var reviewTimer = null;
   var reviewCount = reviewTrack ? reviewTrack.children.length : 0;
@@ -51,6 +50,21 @@
       });
     });
   }
+
+  document.querySelectorAll('a[href="#inicio"]').forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      if (nav && menuToggle) {
+        nav.classList.remove("open");
+        menuToggle.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      }
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      if (window.location.hash !== "#inicio") {
+        window.history.replaceState(null, "", "#inicio");
+      }
+    });
+  });
 
   if ("IntersectionObserver" in window) {
     var observer = new IntersectionObserver(
@@ -121,11 +135,17 @@
   }
 
   if (dateInput) {
+    function toLocalISO(date) {
+      var y = date.getFullYear();
+      var m = String(date.getMonth() + 1).padStart(2, "0");
+      var d = String(date.getDate()).padStart(2, "0");
+      return y + "-" + m + "-" + d;
+    }
     var today = new Date();
-    var todayISO = today.toISOString().split("T")[0];
+    var todayISO = toLocalISO(today);
     var maxDateObj = new Date(today);
     maxDateObj.setDate(maxDateObj.getDate() + 120);
-    var maxDateISO = maxDateObj.toISOString().split("T")[0];
+    var maxDateISO = toLocalISO(maxDateObj);
     dateInput.min = todayISO;
     dateInput.max = maxDateISO;
   }
@@ -251,9 +271,4 @@
     }
   });
 
-  demoContactLinks.forEach(function (link) {
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-    });
-  });
 })();
