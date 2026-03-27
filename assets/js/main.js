@@ -51,7 +51,7 @@
     });
   }
 
-  document.querySelectorAll('a[href="#inicio"]').forEach(function (link) {
+  document.querySelectorAll('a[href="#inicio"], a[href="index.html#inicio"]').forEach(function (link) {
     link.addEventListener("click", function (event) {
       event.preventDefault();
       if (nav && menuToggle) {
@@ -60,9 +60,7 @@
         menuToggle.setAttribute("aria-expanded", "false");
       }
       window.scrollTo({ top: 0, behavior: "smooth" });
-      if (window.location.hash !== "#inicio") {
-        window.history.replaceState(null, "", "#inicio");
-      }
+      window.history.replaceState(null, "", "#inicio");
     });
   });
 
